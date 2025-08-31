@@ -1,4 +1,3 @@
-
 /*-----------------------------------*\
  * style.css
 \*-----------------------------------*/
@@ -6,9 +5,6 @@
 /**
  * copyright 2022 codewithsadee
  */
-
-
-
 
 
 /*-----------------------------------*\
@@ -29,11 +25,9 @@
 
   /**
    * typography
+   * (Đã chuyển sang Be Vietnam Pro)
    */
-
-  --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
-  --ff-poppins: 'Poppins', sans-serif;
-  --ff-roboto: 'Roboto', sans-serif;
+  --ff-primary: "Be Vietnam Pro", sans-serif;
 
   --fs-1: 2rem;
   --fs-2: calc(1.813rem + 1vw);
@@ -44,6 +38,7 @@
   --fs-7: 0.75rem;
 
   --fw-400: 400;
+  --fw-500: 500;
   --fw-700: 700;
 
   /**
@@ -66,12 +61,12 @@
   --radius-12: 12px;
 
 }
+
 .site-logo {
   max-height: 100px;  /* chỉnh chiều cao logo phù hợp */
   width: auto;
   display: block;
 }
-
 
 
 /*-----------------------------------*\
@@ -103,9 +98,6 @@ body.light_theme {
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -161,7 +153,7 @@ ion-icon { pointer-events: none; }
 }
 
 html {
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-primary);
   scroll-behavior: smooth;
 }
 
@@ -171,9 +163,6 @@ body {
 }
 
 body.active { overflow: hidden; }
-
-
-
 
 
 /*-----------------------------------*\
@@ -192,7 +181,7 @@ body.active { overflow: hidden; }
 .h3,
 .h4 {
   color: var(--color-primary);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-primary);
   line-height: 1.2;
 }
 
@@ -279,9 +268,6 @@ body.active { overflow: hidden; }
 }
 
 
-
-
-
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
@@ -317,7 +303,8 @@ body.active { overflow: hidden; }
 
 .logo a {
   color: var(--color-primary);
-  font-family: var(--ff-saira-stencil-one);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-700);
 }
 
 .logo span {
@@ -430,7 +417,7 @@ body.active { overflow: hidden; }
   width: max-content;
   margin-inline: auto;
   color: var(--color-primary);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-primary);
   font-size: var(--fs-1);
   padding: 10px;
   transform: translateY(50px);
@@ -455,9 +442,6 @@ body.active { overflow: hidden; }
 }
 
 .navbar-link:is(:hover, :focus)::before { width: 100%; }
-
-
-
 
 
 /*-----------------------------------*\
@@ -492,9 +476,6 @@ main { overflow-x: hidden; }
 }
 
 .hero .btn-primary { margin-inline: auto; }
-
-
-
 
 
 /*-----------------------------------*\
@@ -552,9 +533,6 @@ main { overflow-x: hidden; }
 .stats-card > ion-icon { color: var(--color-secondary); }
 
 
-
-
-
 /*-----------------------------------*\
  * #ABOUT
 \*-----------------------------------*/
@@ -573,9 +551,6 @@ main { overflow-x: hidden; }
 }
 
 .about .btn-secondary { margin-bottom: 10px; }
-
-
-
 
 
 /*-----------------------------------*\
@@ -619,7 +594,7 @@ main { overflow-x: hidden; }
 
 .toggle-btn {
   color: var(--color-primary);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-primary);
   padding: 5px 25px;
   transition: var(--transition-1);
 }
@@ -640,10 +615,8 @@ main { overflow-x: hidden; }
 }
 
 @keyframes fadeIn {
-
   0% { opacity: 0; }
   100% { opacity: 1; }
-
 }
 
 .skill-card {
@@ -662,9 +635,6 @@ main { overflow-x: hidden; }
   transform: translateY(0);
   opacity: 1;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -734,9 +704,6 @@ main { overflow-x: hidden; }
   text-decoration: underline;
   margin-inline: auto;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -815,7 +782,7 @@ main { overflow-x: hidden; }
 .form-label {
   color: var(--color-primary);
   font-size: var(--fs-7);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-primary);
   margin-bottom: 8px;
   margin-left: 5px;
 }
@@ -859,9 +826,6 @@ textarea.input-field {
 }
 
 
-
-
-
 /*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
@@ -884,9 +848,6 @@ textarea.input-field {
   display: inline-block;
   color: var(--raw-seinna);
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -919,9 +880,6 @@ textarea.input-field {
 }
 
 
-
-
-
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
@@ -943,8 +901,6 @@ textarea.input-field {
 
   .section-title { max-width: 380px; }
 
-
-
   /**
    * PROJECT
    */
@@ -957,9 +913,6 @@ textarea.input-field {
   .project-list > li:first-child { column-span: all; }
 
 }
-
-
-
 
 
 /**
@@ -976,15 +929,11 @@ textarea.input-field {
 
   .section-title { max-width: 430px; }
 
-
-
   /**
    * STATS
    */
 
   .stats-list { grid-template-columns: 1fr 1fr; }
-
-
 
   /**
    * ABOUT
@@ -1001,8 +950,6 @@ textarea.input-field {
 
   .about .btn-secondary { margin-bottom: 0; }
 
-
-
   /**
    * CONTACT
    */
@@ -1013,9 +960,6 @@ textarea.input-field {
   }
 
 }
-
-
-
 
 
 /**
@@ -1033,18 +977,13 @@ textarea.input-field {
     /**
      * typography
      */
-
     --fs-2: 3rem;
 
     /**
      * spacing
      */
-
     --section-padding: 100px;
-
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1071,8 +1010,6 @@ textarea.input-field {
     left: auto;
     right: calc(100% + 20px);
   }
-
-
 
   /**
    * HEADER
@@ -1111,8 +1048,6 @@ textarea.input-field {
   }
 
   .navbar-link::before { height: 2px; }
-
-
 
   /**
    * HERO
@@ -1209,8 +1144,6 @@ textarea.input-field {
     background: var(--color-secondary);
   }
 
-
-
   /**
    * STATS
    */
@@ -1218,9 +1151,6 @@ textarea.input-field {
   .stats-list { grid-template-columns: repeat(3, 1fr); }
 
   .stats-card { height: 100%; }
-
-
-
 
   /**
    * ABOUT
@@ -1234,9 +1164,6 @@ textarea.input-field {
   }
 
   .about-banner { margin-bottom: 0; }
-
-
-
 
   /**
    * SKILLS
@@ -1253,8 +1180,6 @@ textarea.input-field {
 
   .skills-toggle { margin-inline: 0; }
 
-
-
   /**
    * PROJECT
    */
@@ -1266,8 +1191,6 @@ textarea.input-field {
     margin: 25px;
     margin-left: 0;
   }
-
-
 
   /**
    * CONTACT
@@ -1285,8 +1208,6 @@ textarea.input-field {
 
   .contact-list { margin-left: -40px; }
 
-
-
   /**
    * FOOTER
    */
@@ -1300,9 +1221,6 @@ textarea.input-field {
   .footer .logo { margin-bottom: 0; }
 
 }
-
-
-
 
 
 /**
@@ -1319,9 +1237,6 @@ textarea.input-field {
 
   .section-title { max-width: 460px; }
 
-
-
-
   /**
    * HERO
    */
@@ -1329,9 +1244,6 @@ textarea.input-field {
   .hero-social-list { left: -80px; }
 
   .scroll-down { right: -80px; }
-
-
-
 
   /**
    * ABOUT
