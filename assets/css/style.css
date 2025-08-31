@@ -297,7 +297,7 @@ body.active { overflow: hidden; }
 }
 
 .header.active {
-  padding-block: 12px;
+  padding-block: 25px;
   background: var(--bg-secondary);
   box-shadow: var(--shadow-1);
 }
