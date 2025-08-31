@@ -67,7 +67,7 @@
 
 }
 .site-logo {
-  max-height: 60px;  /* chỉnh chiều cao logo phù hợp */
+  max-height: 100px;  /* chỉnh chiều cao logo phù hợp */
   width: auto;
   display: block;
 }
