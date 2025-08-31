@@ -287,7 +287,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
-  padding-block: 40px;
+  padding-block: 35px;
   position: fixed;
   top: 0;
   left: 0;
@@ -297,7 +297,7 @@ body.active { overflow: hidden; }
 }
 
 .header.active {
-  padding-block: 25px;
+  padding-block: 20px;
   background: var(--bg-secondary);
   box-shadow: var(--shadow-1);
 }
@@ -1167,8 +1167,8 @@ textarea.input-field {
     position: relative;
     color: var(--color-secondary);
     margin-block: 5px;
-    padding: 5px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 26px;
     transition: var(--transition-1);
   }
 
