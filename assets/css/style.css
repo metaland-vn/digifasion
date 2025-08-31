@@ -785,8 +785,8 @@ main { overflow-x: hidden; }
   position: relative;
   background: var(--color-primary);
   color: var(--bg-primary);
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   display: grid;
   place-items: center;
   border-radius: 50%;
