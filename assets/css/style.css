@@ -66,8 +66,11 @@
   --radius-12: 12px;
 
 }
-
-
+.site-logo {
+  max-height: 40px;  /* chỉnh chiều cao logo phù hợp */
+  width: auto;
+  display: block;
+}
 
 
 
