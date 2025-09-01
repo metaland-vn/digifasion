@@ -63,11 +63,10 @@
 }
 
 .site-logo {
-  max-height: 100px;  /* chỉnh chiều cao logo phù hợp */
+  max-height: 56px;  /* responsive logo for header */
   width: auto;
   display: block;
 }
-
 
 /*-----------------------------------*\
  * #THEME COLORS
@@ -114,16 +113,16 @@ li { list-style: none; }
 
 a { text-decoration: none; }
 
-a,
+ a,
 img,
-time,
-span,
-input,
-label,
-select,
-button,
-textarea,
-ion-icon { display: block; }
+ time,
+ span,
+ input,
+ label,
+ select,
+ button,
+ textarea,
+ ion-icon { display: block; }
 
 input,
 button,
@@ -452,6 +451,8 @@ main { overflow-x: hidden; }
 
 .hero {
   min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh; /* iOS Safari fix: stable viewport in portrait */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -462,8 +463,15 @@ main { overflow-x: hidden; }
 
 .hero-banner {
   max-width: 500px;
-  width: 125%;
-  margin-bottom: 30px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.hero-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
@@ -752,8 +760,8 @@ main { overflow-x: hidden; }
   position: relative;
   background: var(--color-primary);
   color: var(--bg-primary);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: grid;
   place-items: center;
   border-radius: 50%;
