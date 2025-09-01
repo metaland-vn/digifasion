@@ -272,7 +272,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
-  padding-block: 35px;
+  padding-block: 40px;
   position: fixed;
   top: 0;
   left: 0;
