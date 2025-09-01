@@ -63,7 +63,7 @@
 }
 
 .site-logo {
-  max-height: 70px;  /* responsive logo for header */
+  max-height: 90px;  /* responsive logo for header */
   width: auto;
   display: block;
 }
