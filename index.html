@@ -1,58 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jack - personal portfolio</title>
 
-  <!-- 
-    - favicon
-  -->
+  <title>Jack - personal portfolio</title>
+  <meta name="description"
+    content="Các khóa học thiết kế thời trang số: từ thiết kế cơ bản đến dựng mẫu 3D, render, animation và catwalk ảo.">
+  <meta name="theme-color" content="#0b1220">
+
+  <!-- favicon -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
+  <!-- custom css link -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
+  <!-- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top" class="dark_theme">
 
-  <!-- 
-    - #HEADER
-  -->
-
+  <!-- #HEADER -->
   <header class="header" data-header>
     <div class="container">
 
       <h1 class="h1 logo">
-        <a href="index.html">
-        <img src="./assets/images/logo.png" alt="Jack Portfolio Logo" class="site-logo">
-      </a>
+        <a href="index.html" aria-label="Về trang chủ">
+          <img src="./assets/images/logo.png" alt="Jack Portfolio Logo" class="site-logo">
+        </a>
       </h1>
 
       <div class="navbar-actions">
-
-        
-        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+        <button type="button" class="theme-btn" aria-label="Đổi giao diện" title="Đổi giao diện" data-theme-btn>
           <span class="icon"></span>
         </button>
-
       </div>
 
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+      <button type="button" class="nav-toggle-btn" aria-label="Mở/đóng menu" title="Mở/đóng menu" data-nav-toggle-btn>
         <span class="one"></span>
         <span class="two"></span>
         <span class="three"></span>
@@ -87,84 +78,63 @@
     </div>
   </header>
 
-
-
-
-
   <main>
     <article class="container">
 
-      <!-- 
-        - #HERO
-      -->
-
+      <!-- #HERO -->
       <section class="hero" id="home">
 
         <figure class="hero-banner">
-  <picture>
-    <source srcset="./assets/images/hero-banner.png" media="(min-width: 600px)">
-    <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
-    <img
-      src="./assets/images/hero-banner-sm.png"
-      alt="A man in a blue shirt with a happy expression"
-      class="w-100"
-      width="1200" height="800"
-      sizes="(max-width: 599px) 100vw, (max-width: 767px) 100vw, 600px"
-      loading="eager" decoding="async" fetchpriority="high">
-  </picture>
-</figure>
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 600px)">
+            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+            <img src="./assets/images/hero-banner-sm.png" alt="Giảng viên thiết kế thời trang số"
+              class="w-100" width="1200" height="800"
+              sizes="(max-width: 599px) 100vw, (max-width: 767px) 100vw, 600px"
+              loading="eager" decoding="async" fetchpriority="high">
+          </picture>
+        </figure>
 
         <div class="hero-content">
-
           <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
-
           <a href="#contact" class="btn btn-primary">Get in touch</a>
-
         </div>
 
         <ul class="hero-social-list">
-
           <li>
-            <a href="#" class="hero-social-link">
+            <a href="#" class="hero-social-link" aria-label="Facebook">
               <ion-icon name="logo-facebook"></ion-icon>
-
               <div class="tooltip">Facebook</div>
             </a>
           </li>
 
           <li>
-            <a href="#" class="hero-social-link">
+            <a href="#" class="hero-social-link" aria-label="Twitter">
               <ion-icon name="logo-twitter"></ion-icon>
-
               <div class="tooltip">Twitter</div>
             </a>
           </li>
 
           <li>
-            <a href="#" class="hero-social-link">
+            <a href="#" class="hero-social-link" aria-label="TikTok">
               <ion-icon name="logo-tiktok"></ion-icon>
-
               <div class="tooltip">Tiktok</div>
             </a>
           </li>
-          
-           <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
 
+          <li>
+            <a href="#" class="hero-social-link" aria-label="YouTube">
+              <ion-icon name="logo-youtube"></ion-icon>
               <div class="tooltip">Youtube</div>
             </a>
           </li>
         </ul>
 
-        <a href="#stats" class="scroll-down">Cuộn xuống</a>
+        <a href="#stats" class="scroll-down" aria-label="Cuộn xuống phần thống kê">Cuộn xuống</a>
 
       </section>
 
-  <!-- 
-        - #PROJECTS
-      -->
-
+      <!-- #PROJECTS -->
       <section class="project" id="portfolio">
 
         <ul class="project-list">
@@ -178,14 +148,16 @@
 
               <p class="section-text">
                 Các khóa học được xây dựng khoa học từ thiết kế cơ bản đến dựng mẫu kỹ thuật số 3D, thử nghiệm trực quan trên
-                manơcanh và người thật. Học viên được rèn kỹ năng từ cơ bản (lấy mẫu, phối màu, chất liệu) đến nâng cao (render, animation, catwalk ảo).
+                manơcanh và người thật. Học viên được rèn kỹ năng từ cơ bản (lấy mẫu, phối màu, chất liệu) đến nâng cao
+                (render, animation, catwalk ảo).
                 Giúp phát triển tư duy sáng tạo và bắt kịp xu hướng thời trang số.
               </p>
-              <div class="btn-group">
-            <button class="btn btn-secondary">ĐĂNG KÝ</button>
 
-            <button class="btn btn-primary">LIÊN HỆ</button>
-          </div>
+              <div class="btn-group">
+                <a href="#contact" class="btn btn-secondary">ĐĂNG KÝ</a>
+                <a href="#contact" class="btn btn-primary">LIÊN HỆ</a>
+              </div>
+
             </div>
           </li>
 
@@ -193,12 +165,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-1.png" class="w-100" alt="Thử nghiệm trên Manocanh.">
+                <img src="./assets/images/project-1.png" class="w-100" alt="Thử nghiệm trên manơcanh.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -209,12 +180,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+                <img src="./assets/images/project-2.png" class="w-100" alt="Bảng vẽ và chuột trên nền xanh.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -225,13 +195,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-3.png" class="w-100"
-                  alt="A Cassette tape on a mellow apricot background.">
+                <img src="./assets/images/project-3.png" class="w-100" alt="Băng cassette trên nền màu cam nhạt.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -242,13 +210,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-4.png" class="w-100"
-                  alt="Blue digital watch on a dark liver background.">
+                <img src="./assets/images/project-4.png" class="w-100" alt="Đồng hồ kỹ thuật số trên nền tối.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -259,13 +225,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-5.png" class="w-100"
-                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+                <img src="./assets/images/project-5.png" class="w-100" alt="Xe kéo hành lý trên nền tối.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -276,13 +240,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-6.png" class="w-100"
-                  alt="On a yellow background, a digital watch and a glass.">
+                <img src="./assets/images/project-6.png" class="w-100" alt="Đồng hồ và ly trên nền vàng.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -293,13 +255,11 @@
             <a href="#" class="project-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/project-7.png" class="w-100"
-                  alt="A fujifilm instant camera on a dark electric blue background.">
+                <img src="./assets/images/project-7.png" class="w-100" alt="Máy ảnh chụp lấy liền trên nền xanh.">
               </figure>
 
               <div class="card-content">
                 <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
-
                 <time class="publish-date" datetime="2022-04">April 2022</time>
               </div>
 
@@ -307,28 +267,22 @@
           </li>
 
           <li>
-            <button class="load-more">Load more work</button>
+            <button type="button" class="load-more">Load more work</button>
           </li>
 
         </ul>
 
       </section>
 
-
-
-
-      <!-- 
-        - #STATS
-      -->
-
+      <!-- #STATS -->
       <section class="stats" id="stats">
         <ul class="stats-list">
 
           <li>
-            <a href="#" class="stats-card">
+            <a href="#" class="stats-card" aria-label="12+ năm kinh nghiệm">
 
               <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Biểu tượng huy hiệu">
               </div>
 
               <h2 class="h2 card-title">
@@ -341,10 +295,10 @@
           </li>
 
           <li>
-            <a href="#" class="stats-card">
+            <a href="#" class="stats-card" aria-label="50+ khóa học đã hoàn thành">
 
               <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Biểu tượng dấu tick">
               </div>
 
               <h2 class="h2 card-title">
@@ -357,10 +311,10 @@
           </li>
 
           <li>
-            <a href="#" class="stats-card">
+            <a href="#" class="stats-card" aria-label="95+ học viên đã tốt nghiệp">
 
               <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Biểu tượng đánh giá">
               </div>
 
               <h2 class="h2 card-title">
@@ -375,19 +329,11 @@
         </ul>
       </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
+      <!-- #ABOUT -->
       <section class="about" id="about">
 
         <figure class="about-banner">
-          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
-            class="w-100">
+          <img src="./assets/images/about-banner.png" alt="Giới thiệu giảng viên" class="w-100">
         </figure>
 
         <div class="about-content section-content">
@@ -398,27 +344,17 @@
 
           <p class="section-text">
             Mục tiêu đào tạo thiết kế thời trang cho trẻ em nhằm giúp các em làm quen với tư duy sáng tạo trong
-            thời trang và ứng dụng công nghệ số hiện đại. Trẻ sẽ được tiếp cận phần mềm thiết kế 3D để tự tay 
+            thời trang và ứng dụng công nghệ số hiện đại. Trẻ sẽ được tiếp cận phần mềm thiết kế 3D để tự tay
             dựng mô hình quần áo, phối màu, chất liệu và tạo phong cách cá nhân.
-            Chương trình rèn luyện kỹ năng thẩm mỹ, tư duy logic, khả năng trình bày ý tưởng cũng như làm việc nhóm. 
+            Chương trình rèn luyện kỹ năng thẩm mỹ, tư duy logic, khả năng trình bày ý tưởng cũng như làm việc nhóm.
             Qua đó, các em hình thành sự tự tin, niềm đam mê sáng tạo và định hướng phát triển trong lĩnh vực thời trang số của tương lai.
-        
           </p>
-
-         
 
         </div>
 
       </section>
 
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
+      <!-- #SKILLS -->
       <section class="skills" id="skills">
 
         <div class="skills-content section-content">
@@ -434,9 +370,8 @@
           </p>
 
           <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-            <button class="toggle-btn" data-toggle-btn>Tools</button>
+            <button type="button" class="toggle-btn active" data-toggle-btn>Skills</button>
+            <button type="button" class="toggle-btn" data-toggle-btn>Tools</button>
           </div>
 
         </div>
@@ -448,9 +383,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Sáng tạo</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-1.png" alt="HTML5 logo">
+                  <img src="./assets/images/skill-1.png" alt="Sáng tạo">
                 </div>
               </div>
             </li>
@@ -458,9 +392,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Làm việc nhóm</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-2.png" alt="CSS3 logo">
+                  <img src="./assets/images/skill-2.png" alt="Làm việc nhóm">
                 </div>
               </div>
             </li>
@@ -468,9 +401,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Công nghệ</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-3.png" alt="JavaScript logo">
+                  <img src="./assets/images/skill-3.png" alt="Công nghệ">
                 </div>
               </div>
             </li>
@@ -478,19 +410,17 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Kỹ thuật</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-4.png" alt="TypeScript logo">
+                  <img src="./assets/images/skill-4.png" alt="Kỹ thuật">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Marketing-Truyền thông</div>
-
+                <div class="tooltip">Marketing - Truyền thông</div>
                 <div class="card-icon">
-                  <img src="./assets/images/skill-5.png" alt="Marketing logo">
+                  <img src="./assets/images/skill-5.png" alt="Marketing">
                 </div>
               </div>
             </li>
@@ -498,9 +428,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Kinh doanh</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-6.png" alt="Kinh doanh logo">
+                  <img src="./assets/images/skill-6.png" alt="Kinh doanh">
                 </div>
               </div>
             </li>
@@ -508,9 +437,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Tổng hợp</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-7.png" alt="Tổng hợp logo">
+                  <img src="./assets/images/skill-7.png" alt="Tổng hợp">
                 </div>
               </div>
             </li>
@@ -518,9 +446,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Sử dụng AI</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/skill-9.png" alt="AI logo">
+                  <img src="./assets/images/skill-9.png" alt="AI">
                 </div>
               </div>
             </li>
@@ -528,9 +455,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Vue</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/vue.png" alt="Vue logo">
+                  <img src="./assets/images/vue.png" alt="Vue">
                 </div>
               </div>
             </li>
@@ -538,9 +464,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Firebase</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                  <img src="./assets/images/firebase.png" alt="Firebase">
                 </div>
               </div>
             </li>
@@ -548,9 +473,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">PugJs</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+                  <img src="./assets/images/pugjs.png" alt="PugJs">
                 </div>
               </div>
             </li>
@@ -558,9 +482,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">SASS</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/sass.png" alt="SASS logo">
+                  <img src="./assets/images/sass.png" alt="SASS">
                 </div>
               </div>
             </li>
@@ -572,9 +495,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Jinny</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/Jinny.png" alt="Jinny logo">
+                  <img src="./assets/images/Jinny.png" alt="Jinny">
                 </div>
               </div>
             </li>
@@ -582,9 +504,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Blender</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/Blender.png" alt="Blender logo">
+                  <img src="./assets/images/Blender.png" alt="Blender">
                 </div>
               </div>
             </li>
@@ -592,7 +513,6 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Krita</div>
-
                 <div class="card-icon">
                   <img src="./assets/images/krita.png" alt="Krita">
                 </div>
@@ -602,7 +522,6 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Mixamo</div>
-
                 <div class="card-icon">
                   <img src="./assets/images/mixamo.png" alt="Mixamo">
                 </div>
@@ -611,20 +530,18 @@
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Visual Stuido</div>
-
+                <div class="tooltip">Visual Studio</div>
                 <div class="card-icon">
-                  <img src="./assets/images/visual.png" alt="Visual logo">
+                  <img src="./assets/images/visual.png" alt="Visual Studio">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Chatgpt</div>
-
+                <div class="tooltip">ChatGPT</div>
                 <div class="card-icon">
-                  <img src="./assets/images/chatgpt.png" alt="Chatgpt logo">
+                  <img src="./assets/images/chatgpt.png" alt="ChatGPT">
                 </div>
               </div>
             </li>
@@ -632,9 +549,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">GIMP</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/gimp.png" alt="GIMP logo">
+                  <img src="./assets/images/gimp.png" alt="GIMP">
                 </div>
               </div>
             </li>
@@ -642,9 +558,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Tinkercad</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/tinkercad.png" alt="Tinkercad logo">
+                  <img src="./assets/images/tinkercad.png" alt="Tinkercad">
                 </div>
               </div>
             </li>
@@ -652,9 +567,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Figma</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/figma.png" alt="Figma logo">
+                  <img src="./assets/images/figma.png" alt="Figma">
                 </div>
               </div>
             </li>
@@ -662,9 +576,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Midjourney</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/midjourney.png" alt="Midjourney logo">
+                  <img src="./assets/images/midjourney.png" alt="Midjourney">
                 </div>
               </div>
             </li>
@@ -672,9 +585,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Leonardo.ai</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/leonardo.png" alt="Leonardo.ai logo">
+                  <img src="./assets/images/leonardo.png" alt="Leonardo.ai">
                 </div>
               </div>
             </li>
@@ -682,9 +594,8 @@
             <li>
               <div class="skill-card">
                 <div class="tooltip">Clo3D</div>
-
                 <div class="card-icon">
-                  <img src="./assets/images/clo3d.png" alt="Clo3D logo">
+                  <img src="./assets/images/clo3d.png" alt="Clo3D">
                 </div>
               </div>
             </li>
@@ -695,15 +606,7 @@
 
       </section>
 
-
-
-
-
-    
-      <!-- 
-        - #CONTACT
-      -->
-
+      <!-- #CONTACT -->
       <section class="contact" id="contact">
 
         <div class="contact-content section-content">
@@ -728,7 +631,7 @@
                 <h3 class="h4 contact-item-title">Address:</h3>
 
                 <address class="contact-info">
-                 106 đường Hoàng Quốc Việt, Hà Nội
+                  106 đường Hoàng Quốc Việt, Hà Nội
                 </address>
               </div>
 
@@ -744,7 +647,6 @@
                 <h3 class="h4 contact-item-title">Phone:</h3>
 
                 <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
-
                 <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
               </div>
 
@@ -760,43 +662,38 @@
                 <h3 class="h4 contact-item-title">Email:</h3>
 
                 <a href="mailto:info@gmail.com" class="contact-info">info@gmail.com</a>
-
                 <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a>
               </div>
 
             </li>
 
             <li>
-              <ul class="contac-social-list">
+              <ul class="contact-social-list">
 
                 <li>
-                  <a href="#" class="contact-social-link">
+                  <a href="#" class="contact-social-link" aria-label="Facebook">
                     <div class="tooltip">Facebook</div>
-
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="contact-social-link">
+                  <a href="#" class="contact-social-link" aria-label="Twitter">
                     <div class="tooltip">Twitter</div>
-
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="contact-social-link">
+                  <a href="#" class="contact-social-link" aria-label="TikTok">
                     <div class="tooltip">Tiktok</div>
-
                     <ion-icon name="logo-tiktok"></ion-icon>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="contact-social-link">
+                  <a href="#" class="contact-social-link" aria-label="YouTube">
                     <div class="tooltip">Youtube</div>
-
                     <ion-icon name="logo-youtube"></ion-icon>
                   </a>
                 </li>
@@ -817,7 +714,6 @@
             <div class="input-wrapper">
 
               <input type="text" name="name" id="name" required placeholder="e.g Hoàng Thanh Thảo" class="input-field">
-
               <ion-icon name="person-circle"></ion-icon>
 
             </div>
@@ -832,7 +728,6 @@
 
               <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
                 class="input-field">
-
               <ion-icon name="mail"></ion-icon>
 
             </div>
@@ -846,7 +741,6 @@
             <div class="input-wrapper">
 
               <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
               <ion-icon name="call"></ion-icon>
 
             </div>
@@ -861,7 +755,6 @@
 
               <textarea name="message" id="message" required placeholder="Write message..."
                 class="input-field"></textarea>
-
               <ion-icon name="chatbubbles"></ion-icon>
 
             </div>
@@ -877,54 +770,32 @@
     </article>
   </main>
 
+  <!-- #FOOTER -->
+  <footer class="footer">
+    <div class="container">
 
+      <p class="h1 logo">
+        <a href="index.html" aria-label="Về trang chủ̀ang chủ">
+          <img src="./assets/images/logo.png" alt="Jack Portfolio Logo" class="site-logo" width="250" height="70">
+        </a>
+      </p>
 
+      <p class="copyright">
+        &copy; 2022 <a href="#" rel="nofollow">codewithsadee</a>. All rights reserved
+      </p>
 
+    </div>
+  </footer>
 
-  <!-- 
-    - #FOOTER
-  -->
-
-<footer class="footer">
-  <div class="container">
-
-    <p class="h1 logo">
-      <a href="index.html" aria-label="Go to homepage">
-        <img src="./assets/images/logo.png" alt="Jack Portfolio Logo" class="site-logo" width="250" height="70">
-      </a>
-    </p>
-
-    <p class="copyright">
-      &copy; 2022 <a href="#" rel="nofollow">codewithsadee</a>. All rights reserved
-    </p>
-
-  </div>
-</footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top title="Go to Top">
+  <!-- #GO TO TOP -->
+  <a href="#top" class="go-top" data-go-top title="Go to Top" aria-label="Lên đầu trang">
     <ion-icon name="arrow-up"></ion-icon>
   </a>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
+  <!-- custom js link -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
+  <!-- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
