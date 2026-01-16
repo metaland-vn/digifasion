@@ -62,10 +62,28 @@
 
 }
 
+/* ----------------------------------
+   LOGO SIZING (Header vs Footer)
+   ---------------------------------- */
+
+/* Mặc định: logo ở header */
 .site-logo {
-  max-height: 90px;  /* responsive logo for header */
+  max-height: 90px;
   width: auto;
   display: block;
+}
+
+/* Footer: logo to hơn (override) */
+.footer .site-logo {
+  max-height: 120px;
+  width: auto;
+}
+
+/* Desktop footer: to hơn nữa */
+@media (min-width: 992px) {
+  .footer .site-logo {
+    max-height: 150px;
+  }
 }
 
 /*-----------------------------------*\
@@ -111,18 +129,27 @@ body.light_theme {
 
 li { list-style: none; }
 
-a { text-decoration: none; }
+/* Link: giữ sạch, nhưng vẫn inherit màu */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
- a,
+a,
 img,
- time,
- span,
- input,
- label,
- select,
- button,
- textarea,
- ion-icon { display: block; }
+time,
+span,
+input,
+label,
+select,
+button,
+textarea,
+ion-icon { display: block; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 input,
 button,
@@ -141,7 +168,8 @@ textarea { width: 100%; }
 
 ion-icon { pointer-events: none; }
 
-:is(a, button, select) {
+/* Focus rõ hơn (accessibility) */
+:is(a, button, select, input, textarea) {
   outline-color: var(--scarlet);
   outline-offset: 3px;
 }
@@ -747,7 +775,9 @@ main { overflow-x: hidden; }
 
 .contact-info:not(address):is(:hover, :focus) { color: var(--color-primary); }
 
-.contac-social-list {
+/* Hỗ trợ cả class cũ (contac-social-list) và class đúng (contact-social-list) */
+.contac-social-list,
+.contact-social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -846,6 +876,11 @@ textarea.input-field {
 }
 
 .footer .logo { margin-bottom: 15px; }
+
+/* Tránh logo bị co khi footer dùng flex ở desktop */
+@media (min-width: 992px) {
+  .footer .logo { flex: 0 0 auto; }
+}
 
 .copyright {
   color: var(--color-secondary);
@@ -1224,6 +1259,7 @@ textarea.input-field {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
   }
 
   .footer .logo { margin-bottom: 0; }
